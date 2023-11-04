@@ -52,7 +52,7 @@ function Information() {
                   des3="A few PhD positions are available."
                   des4="Looking for self-motivated BTech/MTech students (NET/GATE qualified) with high analytical skill, strong research aptitude, and excellent academic background to join our research team. If you are interested in working with us and pursuing PhD/Summer Internship/MTP/BTP, write to us with your updated resume."
                 />
-                <a href="/sections/attention-catchers/SA" src="www.google.com">See All Details</a>
+                <a href="/sections/attention-catchers/SA" src="www.google.com" style={{  fontSize: '17px' }}>See All Details</a>
               </Grid>
             </Grid>
             <Grid container spacing={-2} sx={{ mt: { xs: 0, md: 6 } }}>
@@ -83,7 +83,7 @@ function Information() {
                   }
                 />
                 
-                <a href="/sections/attention-catchers/SA" src="www.google.com">See All Details</a>
+                <a href="/sections/attention-catchers/SA" src="www.google.com" style={{  fontSize: '17px' }}>See All Details</a>
               </Grid>
               <Grid item xs={12} md={6}></Grid>
             </Grid>
