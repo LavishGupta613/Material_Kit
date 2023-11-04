@@ -75,7 +75,7 @@ function Presentation() {
            bottom ="200px" left="300px" mx="auto">
             <MKTypography 
               variant="h1"
-              color="white"
+              
               mt={-6}
               mb={1}
               sx={({ breakpoints, typography: { size } }) => ({
@@ -84,7 +84,9 @@ function Presentation() {
                 },
               })}
             >
-              Welcome to UbiSys Research Lab!{" "}
+             <div style={{ color: "#0070ff" }}>Welcome to UbiSys Research Lab!</div>
+
+
             </MKTypography>
             <MKTypography
               variant="body1"

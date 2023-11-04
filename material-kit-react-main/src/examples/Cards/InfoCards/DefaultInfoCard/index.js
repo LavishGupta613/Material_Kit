@@ -37,17 +37,19 @@ function DefaultInfoCard({ color, icon, title, description, direction, small,des
           <Icon>{icon}</Icon>{" "}
         </MKTypography>
       ) : (
-        icon
+        <div>
+          
+          {icon}
+          <MKTypography
+            variant="5"
+            fontWeight="bold"
+            mb={1.5}
+          >
+            {title}
+          </MKTypography>
+        </div>
       )}
-      <MKTypography
-        display="block"
-        variant="5"
-        fontWeight="bold"
-        mt={direction === "center" ? 1 : 2}
-        mb={1.5}
-      >
-        {title}
-      </MKTypography>
+      
       <MKTypography
         display="block"
         variant={small ? "button" : "body2"}
