@@ -84,7 +84,7 @@ function Presentation() {
                 },
               })}
             >
-             <div style={{ color: "#0070ff" }}>Welcome to UbiSys Research Lab!</div>
+             <div style={{ color: "white" }}>Welcome to UbiSys Research Lab!</div>
 
 
             </MKTypography>

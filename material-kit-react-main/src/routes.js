@@ -417,6 +417,11 @@ const routes = [
         href: "https://www.creative-tim.com/learning-lab/react/quick-start/material-kit/",
       },
       {
+        name: "Publication",
+        description: "All about overview, quick start, license and contents",
+        href: "/sections/page-sections/DC Publication/cse.iitkgp.ac.in/resgrp/ubinet/publications",
+      },
+      {
         name: "foundation",
         description: "See our colors, icons and typography",
         href: "https://www.creative-tim.com/learning-lab/react/colors/material-kit/",
