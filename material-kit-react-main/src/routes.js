@@ -43,6 +43,7 @@ import Icon from "@mui/material/Icon";
 // import GitHubIcon from "@mui/icons-material/GitHub";
 
 // Pages
+
 import AboutUs from "layouts/pages/landing-pages/about-us";
 import ContactUs from "layouts/pages/landing-pages/contact-us";
 import Author from "layouts/pages/landing-pages/author";
@@ -83,6 +84,7 @@ import PageHeadersRJP3 from "layouts/sections/elements/RJP3";
 import PageHeadersRJP4 from "layouts/sections/elements/RJP4";
 import PageHeadersJP1 from "layouts/sections/elements/RJP1";
 
+
 import PageHeaders from "layouts/sections/page-sections/page-headers";
 import Features from "layouts/sections/page-sections/featuers";
 // import Navbars from "layouts/sections/navigation/navbars";
@@ -102,6 +104,7 @@ import Dropdowns from "layouts/sections/elements/dropdowns";
 import ProgressBars from "layouts/sections/elements/progress-bars";
 import Toggles from "layouts/sections/elements/toggles";
 import Typography from "layouts/sections/elements/typography";
+import Solve from "pages/Presentation/sections/DC Publication/cse.iitkgp.ac.in/resgrp/ubinet/publications/index2";
 // import HeaderOneRCP1 from "layouts/sections/elements/RCP/components";
 // import HeaderOneR1 from "layouts/sections/page-sections/RC1/components";
 
@@ -277,7 +280,7 @@ const routes = [
       {
         name: "elements",
         description: "See all sections",
-        dropdown: true,
+        dropdown: false,
         collapse: [
           {
             name: "avatars",
@@ -289,7 +292,13 @@ const routes = [
                 route: "/sections/page-sections/RC1",
             component: <PageHeadersR1/>,
 
-              },{
+              },
+              {
+                name: "Publication",
+                route: "/sections/elements/badges",
+                component: <Badges />,
+              },
+              {
                 name:"World",
                 route: "/sections/attention-catchers/tooltips-popovers",
             component: <TooltipsPopovers />,
@@ -298,6 +307,12 @@ const routes = [
             // route: "/sections/elements/avatars",
             // component: <Avatars />,
           },
+          {
+            name: "All Publication",
+            route: "/publication",
+            component: <Solve />,
+          },
+          
           {
             name: "badges",
             route: "/sections/elements/badges",
@@ -417,9 +432,9 @@ const routes = [
         href: "https://www.creative-tim.com/learning-lab/react/quick-start/material-kit/",
       },
       {
-        name: "Publication",
+        name: <div><a href="./layouts/sections/elements/DC Publication/cse.iitkgp.ac.in/resgrp/ubinet/publications">Pun</a></div>,
         description: "All about overview, quick start, license and contents",
-        href: "/sections/page-sections/DC Publication/cse.iitkgp.ac.in/resgrp/ubinet/publications",
+        // href: "/sections/elements/DC Publication/cse.iitkgp.ac.in/resgrp/ubinet/publications",
       },
       {
         name: "foundation",

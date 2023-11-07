@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link ,Route ,Routes} from 'react-router-dom'; // Remove the unnecessary 'Route' and 'Routes' imports
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import MKBox from "components/MKBox";
@@ -7,7 +7,7 @@ import MKBadge from "components/MKBadge";
 import MKTypography from "components/MKTypography";
 import ExampleCard from "pages/Presentation/components/ExampleCard";
 import data1 from './data';
-// import HeaderOne from './HeaderOne'; // Import the HeaderOne component
+
 
 function DesignBlocks1() {
   const renderData = data1.map(({ title, items }) => (
@@ -29,17 +29,20 @@ function DesignBlocks1() {
             </Grid>
           ))}
         </Grid>
-        
       </Grid>
       <div style={{ textAlign: 'center' }}>
-          <a href="https://sites.google.com/site/suchetana0116/publications" style={{ textDecoration: 'underline' }}>See All Publications</a>
-        </div>
+        <Routes>
+          <Route path='/publication' >dfghjk</Route>
+        </Routes>
+        <a href="http://127.0.0.1:3000/material-kit-react-main/src/pages/Presentation/sections/DC%20Publication/cse.iitkgp.ac.in/resgrp/ubinet/publications/index.html" style={{ textDecoration: 'underline' }}>See All Publications</a>
+      </div>
     </Grid>
   ));
 
   return (
     <MKBox component="section" my={-20} py={6}>
       <Container>
+     
         <Grid
           container
           item
@@ -53,7 +56,6 @@ function DesignBlocks1() {
         </Grid>
       </Container>
       <Container sx={{ mt: 6 }}>{renderData}</Container>
-     
     </MKBox>
   );
 }

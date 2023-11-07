@@ -44,38 +44,51 @@ function Information() {
           justifyContent="center"
           sx={{ mx: "auto", textAlign: "center" }}
         >
-          <MKTypography variant="h2">Trusted by over</MKTypography>
-          <MKTypography variant="h2" color="info" textGradient mb={2}>
+          <MKTypography variant="h3">Courses</MKTypography>
+          {/* <MKTypography variant="h2" color="info" textGradient mb={2}>
             1,679,477+ web developers
-          </MKTypography>
-          <MKTypography variant="body1" color="text" mb={2}>
+          </MKTypography> */}
+          {/* <MKTypography variant="body1" color="text" mb={2}>
             Many Fortune 500 companies, startups, universities and governmental institutions love
             Creative Tim&apos;s products.
-          </MKTypography>
+          </MKTypography> */}
         </Grid>
+        
         <Grid container spacing={3} sx={{ mt: 8 }}>
           <Grid item xs={12} md={6} lg={4}>
             <DefaultReviewCard
-              name="Nick Willever"
-              date="1 day ago"
-              review="This is an excellent product, the documentation is excellent and helped me get things done more efficiently."
-              rating={5}
+              name="Current Courses"
+             
+              review=<div><a href="https://ubisysresearch.github.io/courses/mpc/index.html" >Mobile and Pervasive Computing (Jan 2023)</a></div>
+              
             />
           </Grid>
           <Grid item xs={12} md={6} lg={4}>
             <DefaultReviewCard
-              color="info"
-              name="Shailesh Kushwaha"
+            
+              name="Undergraduate Courses"
               date="1 week ago"
-              review="I found solution to all my design needs from Creative Tim. I use them as a freelancer in my hobby projects for fun! And its really affordable, very humble guys !!!"
+              review=<div><ul>
+                <li>Operating Systems [Monsoon 2021, Spring 2021, Monsoon 2022]</li>
+                <li>Computer Networks [Monsoon 2020]</li>
+                <li>Operating Systems [Spring2020]</li>
+                <li>Algorithms [Monsoon 2019, 2018]</li>
+                <li>Ubiquitous Computing [Spring 2018, 2017]</li>
+                <li>Distributed Systems [Monsoon 2017]</li>
+              </ul></div>
               rating={5}
             />
           </Grid>
           <Grid item xs={12} md={6} lg={4}>
             <DefaultReviewCard
-              name="Samuel Kamuli"
+              name="Postgraduate Courses"
               date="3 weeks ago"
-              review="Great product. Helped me cut the time to set up a site. I used the components within instead of starting from scratch. I highly recommend for developers who want to spend more time on the backend!."
+              review=<div><ul>
+                <li>Computer Network Protocols and Applications [Monsoon 2022]</li>
+                <li>Mobile and Pervasive Computing [Spring 2020]</li>
+                <li>Object Oriented Programming</li>
+                <li>Advanced Operating Systems</li>
+              </ul></div>
               rating={5}
             />
           </Grid>
