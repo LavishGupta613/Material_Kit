@@ -1,11 +1,12 @@
 {
+  "homepage":"http://LavishGupta613.github.io/Material_Kit",
   "name": "material-kit-2-react",
   "version": "2.1.0",
   "private": true,
   "author": "Creative Tim",
   "license": "See license in https://www.creative-tim.com/license",
   "description": "React version of Material Kit 2 by Creative Tim",
-  "homepage": "https://demos.creative-tim.com/material-kit-react/#/",
+  
   "bugs": {
     "url": "https://github.com/creativetimofficial/ct-material-kit-react/issues"
   },
@@ -48,6 +49,8 @@
   },
   "scripts": {
     "start": "set PORT=3006 && react-scripts start",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -80,6 +83,7 @@
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-react": "7.32.2",
     "eslint-plugin-react-hooks": "4.6.0",
+    "gh-pages": "^6.0.0",
     "prettier": "2.8.7"
   }
 }
